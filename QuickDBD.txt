@@ -11,12 +11,12 @@ email varchar(255)
 Category
 -
 category_id int PK
-category varchar(255) FK >- Campaign.category
+category varchar(255)
 
 Subcategory
 -
 subcategory_id int PK
-subcategory varchar(255) FK >- Campaign.subcategory
+subcategory varchar(255)
 
 Campaign
 -
@@ -32,5 +32,5 @@ country INT
 currency INT
 launch_date DATE
 end_date DATE
-category varchar(255)
-subcategory varchar(255)
+category varchar(255) FK >- Category.category
+subcategory varchar(255) FK >- Subcategory.subcategory
