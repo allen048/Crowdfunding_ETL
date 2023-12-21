@@ -22,15 +22,15 @@ Campaign
 -
 cf_id int PK
 contact_id int FK >- Contacts.contact_id
-company_name  varchar(255)
-description TEXT
-goal INT
-pledged INT
-outcome INT
-backers_count INT
-country INT
-currency INT
-launch_date DATE
-end_date DATE
-category varchar(255) FK >- Category.category
-subcategory varchar(255) FK >- Subcategory.subcategory
+company_name VARCHAR(255),
+description TEXT,
+goal DECIMAL,
+pledged DECIMAL,
+outcome VARCHAR(50),
+backers_count INT,
+country VARCHAR(2),
+currency VARCHAR(3),
+launch_date TIMESTAMP,
+end_date TIMESTAMP,
+category_id VARCHAR(50), FK >- Category.category
+subcategory_id VARCHAR(50) FK >- Subcategory.subcategory_id
